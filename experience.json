@@ -8,13 +8,17 @@
       "role": "Digital Business Integration Manager",
       "projects": [
         {
-          "name": "MTN Digital",
+          "name": "MTN Digital Online Store",
+          "length": "7 months",
           "technologies_used": [
-            "API Documention"
+            "Swagger API Documention",
+            "Rest Frameworks",
+            "Graphql"
           ]
         },
         {
           "name": "Mining Management Dashboard",
+          "length": "3 months",
           "technologies_used": [
             "Salesforce",
             "Typescript",
@@ -23,6 +27,7 @@
         },
         {
           "name": "Securemax Tracking",
+          "length": "6 months",
           "technologies_used": [
             "Typescript",
             "Angular",
@@ -34,7 +39,8 @@
           ]
         },
         {
-          "name": "Vodapay Mini App Development",
+          "name": "Vodapay Mini App Development (POC)",
+          "length": "2 months",
           "technologies_used": [
             "JavaScript",
             "React Native",
@@ -44,6 +50,7 @@
         },
         {
           "name": "Izzat Mobile App",
+          "length": "11 months",
           "technologies_used": [
             "Typescript",
             "JavaScript",
@@ -53,13 +60,15 @@
         },
         {
           "name": "Audi Vehicle Transaction Platform",
+          "length": "7 months",
           "technologies_used": [
             "React",
             "Typescript",
             "JavaScript",
             "Graphql",
             "Redux",
-            ""
+            "Styled Components",
+            "Storybook"
           ]
         }
       ],
