@@ -10,6 +10,7 @@
         {
           "name": "MTN Digital Online Store",
           "length": "7 months",
+          "url": "https://web.archive.org/web/20240217100536/https://www.mtn.co.za/shop/deals/contracts/data-only/mobile-internet",
           "technologies_used": [
             "Swagger API Documention",
             "Rest Frameworks",
@@ -19,6 +20,7 @@
         {
           "name": "Mining Management Dashboard",
           "length": "3 months",
+          "url": null,
           "technologies_used": [
             "Salesforce",
             "Typescript",
@@ -28,6 +30,7 @@
         {
           "name": "Securemax Tracking",
           "length": "6 months",
+          "url": null,
           "technologies_used": [
             "Typescript",
             "Angular",
@@ -41,6 +44,7 @@
         {
           "name": "Vodapay Mini App Development (POC)",
           "length": "2 months",
+          "url": null,
           "technologies_used": [
             "JavaScript",
             "React Native",
@@ -51,6 +55,7 @@
         {
           "name": "Izzat Mobile App",
           "length": "11 months",
+          "url": null,
           "technologies_used": [
             "Typescript",
             "JavaScript",
@@ -59,20 +64,27 @@
           ]
         },
         {
-          "name": "Audi Vehicle Transaction Platform",
+          "name": "Audi Global Vehicle Transaction Platform",
           "length": "7 months",
+          "url": "https://www.audi.co.za/za/web/en.html",
           "technologies_used": [
+            "Adobe Experience Manager",
+            "Server Side Rendering",
             "React",
             "Typescript",
             "JavaScript",
             "Graphql",
             "Redux",
             "Styled Components",
-            "Storybook"
+            "Storybook",
+            "Github Actions"
           ]
         }
       ],
-      "achievements": "Consulted and guided clients on various technologies."
+      "achievements": [
+        "Consulted and guided clients on various technologies.",
+        "Successfully launched MTN's Additional Contract Automation Journey"
+      ]
     },
     {
       "company": "WundermanThompson",
@@ -82,8 +94,32 @@
       "role": "Lead Python Developer / Team Lead",
       "projects": [
         {
-          "name": "Telkom Website Maintenance and Improvement",
+          "name": "telkom website maintenance and improvement",
           "url": "https://web.archive.org/web/20171124011137/http://secure.telkom.co.za/today/shop/personal/plans/",
+          "technologies_used": [
+            "django",
+            "python",
+            "gunicorn",
+            "celery",
+            "redis",
+            "Docker"
+          ]
+        },
+        {
+          "name": "openserve website maintenance",
+          "url": "https://web.archive.org/web/20171124011137/http://secure.telkom.co.za/today/shop/personal/plans/",
+          "technologies_used": [
+            "django",
+            "python",
+            "gunicorn",
+            "celery",
+            "redis",
+            "Docker"
+          ]
+        },
+        {
+          "name": "VS Gaming League Website Maintenance and Improvement",
+          "url": "https://vsgaming.co.za/",
           "technologies_used": [
             "Django",
             "Python",
@@ -91,10 +127,13 @@
           ]
         },
         {
-          "name": "Custom CMS Rewrite",
+          "name": "Telkom website rewrite",
           "technologies_used": [
             "Gatsby",
-            "Other Internal Systems Integration"
+            "Django",
+            "Celery",
+            "Azure",
+            "React"
           ]
         }
       ],
@@ -108,18 +147,25 @@
       "role": "Software Engineer",
       "projects": [
         {
-          "name": "Telkom Website Development",
+          "name": "telkom website maintenance and improvement",
+          "url": "https://web.archive.org/web/20171124011137/http://secure.telkom.co.za/today/shop/personal/plans/",
           "technologies_used": [
-            "Django",
-            "Python",
-            "React"
+            "django",
+            "python",
+            "gunicorn",
+            "celery",
+            "redis"
           ]
         },
         {
-          "name": "Openserve Website Maintenance",
+          "name": "openserve website maintenance",
+          "url": "https://web.archive.org/web/20180716081914/www.openserve.co.za/open/",
           "technologies_used": [
-            "Django",
-            "Python"
+            "django",
+            "python",
+            "gunicorn",
+            "celery",
+            "redis"
           ]
         }
       ],
