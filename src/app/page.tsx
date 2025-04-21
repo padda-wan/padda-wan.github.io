@@ -1,6 +1,5 @@
 import styles from "./page.module.css";
 import Image from "next/image";
-import logo from "nextjs-github-pages/jk-logo.svg";
 
 export default function Home() {
   return (
@@ -10,7 +9,7 @@ export default function Home() {
           className="flex"
           priority
           width={50}
-          src={logo}
+          src="nextjs-github-pages/jk-logo.svg"
           alt="Jason Klaaste"
         />
       </div>
