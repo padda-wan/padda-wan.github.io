@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <div className="flex">
+    <div className="min-h-fit text-8xl border-4 m-20 p-20 pl-30 relative">
+      <div className="flex absolute -bottom-20 left-4">
         <Image
           className="flex"
           priority
@@ -15,10 +15,11 @@ export default function Home() {
         />
       </div>
       <ol>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
+        <li>About</li>
+        <li>Experience</li>
+        <li>My Work</li>
       </ol>
+      <div className="bg-black/20 w-20 absolute bottom-0 left-0 border-r-4 h-full">&nbsp;</div>
     </div>
   );
 }

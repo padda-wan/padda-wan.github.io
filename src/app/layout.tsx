@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSerif.variable} m-20`}>
+      <body className={`${dmSerif.variable}  min-h-screen flex flex-col items-center justify-center`}>
         {children}
       </body>
     </html>
