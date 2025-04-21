@@ -9,7 +9,8 @@ export default function Home() {
           className="flex"
           priority
           width={50}
-          src="nextjs-github-pages/jk-logo.svg"
+          height={50}
+          src="jk-logo.svg"
           alt="Jason Klaaste"
         />
       </div>
