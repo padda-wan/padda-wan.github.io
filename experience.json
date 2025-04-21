@@ -1,0 +1,221 @@
+{
+  "experience": [
+    {
+      "company": "Accenture Song",
+      "outline": "Global professional services company providing a broad range of services in strategy, consulting, digital, technology, and operations.",
+      "start_date": 1630483200,
+      "end_date": null,
+      "role": "Digital Business Integration Manager",
+      "projects": [
+        {
+          "name": "MTN Digital Online Store",
+          "length": "7 months",
+          "url": "https://web.archive.org/web/20240217100536/https://www.mtn.co.za/shop/deals/contracts/data-only/mobile-internet",
+          "technologies_used": [
+            "Swagger API Documention",
+            "Rest Frameworks",
+            "Graphql"
+          ]
+        },
+        {
+          "name": "Mining Management Dashboard",
+          "length": "3 months",
+          "url": null,
+          "technologies_used": [
+            "Salesforce",
+            "Typescript",
+            "Angular"
+          ]
+        },
+        {
+          "name": "Securemax Tracking",
+          "length": "6 months",
+          "url": null,
+          "technologies_used": [
+            "Typescript",
+            "Angular",
+            "Google Cloud Runner",
+            "Ionic",
+            "Google Firebase",
+            "Imetrik Tracking API",
+            "Nest JS"
+          ]
+        },
+        {
+          "name": "Vodapay Mini App Development (POC)",
+          "length": "2 months",
+          "url": null,
+          "technologies_used": [
+            "JavaScript",
+            "React Native",
+            "Ionic",
+            "Angular"
+          ]
+        },
+        {
+          "name": "Izzat Mobile App",
+          "length": "11 months",
+          "url": null,
+          "technologies_used": [
+            "Typescript",
+            "JavaScript",
+            "React Native",
+            "React"
+          ]
+        },
+        {
+          "name": "Audi Global Vehicle Transaction Platform",
+          "length": "7 months",
+          "url": "https://www.audi.co.za/za/web/en.html",
+          "technologies_used": [
+            "Adobe Experience Manager",
+            "Server Side Rendering",
+            "React",
+            "Typescript",
+            "JavaScript",
+            "Graphql",
+            "Redux",
+            "Styled Components",
+            "Storybook",
+            "Github Actions"
+          ]
+        }
+      ],
+      "achievements": [
+        "Consulted and guided clients on various technologies.",
+        "Successfully launched MTN's Additional Contract Automation Journey"
+      ]
+    },
+    {
+      "company": "WundermanThompson",
+      "outline": "Global marketing communications company, providing brand strategy, creative advertising, data intelligence, and customer experiences.",
+      "start_date": 1561939200,
+      "end_date": 1627776000,
+      "role": "Lead Python Developer / Team Lead",
+      "projects": [
+        {
+          "name": "telkom website maintenance and improvement",
+          "url": "https://web.archive.org/web/20171124011137/http://secure.telkom.co.za/today/shop/personal/plans/",
+          "technologies_used": [
+            "django",
+            "python",
+            "gunicorn",
+            "celery",
+            "redis",
+            "Docker"
+          ]
+        },
+        {
+          "name": "openserve website maintenance",
+          "url": "https://web.archive.org/web/20171124011137/http://secure.telkom.co.za/today/shop/personal/plans/",
+          "technologies_used": [
+            "django",
+            "python",
+            "gunicorn",
+            "celery",
+            "redis",
+            "Docker"
+          ]
+        },
+        {
+          "name": "VS Gaming League Website Maintenance and Improvement",
+          "url": "https://vsgaming.co.za/",
+          "technologies_used": [
+            "Django",
+            "Python",
+            "Gatsby"
+          ]
+        },
+        {
+          "name": "Telkom website rewrite",
+          "technologies_used": [
+            "Gatsby",
+            "Django",
+            "Celery",
+            "Azure",
+            "React"
+          ]
+        }
+      ],
+      "achievements": "Heading the team responsible for the re-writing of a custom CMS for Telkom's website."
+    },
+    {
+      "company": "TeamGeek",
+      "outline": "Software development company focusing on web and mobile applications.",
+      "start_date": 1527801600,
+      "end_date": 1559318400,
+      "role": "Software Engineer",
+      "projects": [
+        {
+          "name": "telkom website maintenance and improvement",
+          "url": "https://web.archive.org/web/20171124011137/http://secure.telkom.co.za/today/shop/personal/plans/",
+          "technologies_used": [
+            "django",
+            "python",
+            "gunicorn",
+            "celery",
+            "redis"
+          ]
+        },
+        {
+          "name": "openserve website maintenance",
+          "url": "https://web.archive.org/web/20180716081914/www.openserve.co.za/open/",
+          "technologies_used": [
+            "django",
+            "python",
+            "gunicorn",
+            "celery",
+            "redis"
+          ]
+        }
+      ],
+      "achievements": "Worked on migrating the Telkom website into React and creating statically generated web pages."
+    },
+    {
+      "company": "Wealthport",
+      "outline": "Financial technology company providing dashboard solutions for financial management.",
+      "start_date": 1467331200,
+      "end_date": 1526726400,
+      "role": "IT Manager / Developer",
+      "projects": [
+        {
+          "name": "Wealthport Dashboard Development",
+          "technologies_used": [
+            "WordPress",
+            "C#",
+            "Database Management"
+          ]
+        }
+      ],
+      "achievements": "Managed IT services, developed company websites, and assisted in the development of the Wealthport dashboard."
+    },
+    {
+      "company": "Striata SA",
+      "outline": "Digital communications company specializing in eBilling, secure document delivery, and interactive marketing solutions.",
+      "start_date": 1322697600,
+      "end_date": 1467331200,
+      "role": "Team Leader & Campaign Developer",
+      "projects": [
+        {
+          "name": "Electronic Communication and eMarketing Campaigns",
+          "technologies_used": [
+            "HTML",
+            "PHP",
+            "JavaScript",
+            "MySQL"
+          ]
+        }
+      ],
+      "achievements": "Developed electronic communication and eMarketing campaigns, managed MySQL databases, and implemented coding best practices."
+    },
+    {
+      "company": "CTT Computers",
+      "outline": "Local computer repair shop offering hardware and software solutions.",
+      "start_date": 1260038400,
+      "end_date": 1275820800,
+      "role": "In-house Technician",
+      "projects": [],
+      "achievements": "Provided technical support, workshop repairs, and network diagnostics."
+    }
+  ]
+}
