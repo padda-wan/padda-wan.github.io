@@ -20,9 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="m-10">
+      <body className={`${dmSerif.variable} m-20`}>
         {children}
       </body>
-    </html >
+    </html>
   );
 }
