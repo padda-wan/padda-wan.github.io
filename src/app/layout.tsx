@@ -1,16 +1,9 @@
 'use client'
 import Link from 'next/link'
-import type { Metadata } from "next";
 import { usePathname } from "next/navigation";
-import { DM_Serif_Display, Bebas_Neue } from "next/font/google";
+import { Bebas_Neue } from "next/font/google";
 import Image from "next/image";
 import './globals.css'
-
-const dmSerif = DM_Serif_Display({
-  variable: "--font-dm-serif",
-  weight: "400",
-  subsets: ["latin"],
-});
 
 const bebasNeu = Bebas_Neue({
   variable: "--bebas-neu",
