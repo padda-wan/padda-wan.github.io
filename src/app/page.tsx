@@ -1,20 +1,30 @@
 import Link from 'next/link'
 
+const links = [
+  {
+    link: "/about",
+    title: "About"
+  },
+  {
+    link: "/experience",
+    title: "Experience"
+  },
+  {
+    link: "/projects",
+    title: "Projects"
+  },
+  {
+    link: "/contact",
+    title: "Contact"
+  },
+]
+
 export default function Home() {
   return (
     <ol>
-      <li>
-        <Link href={'/about'}>About</Link>
-      </li>
-      <li>
-        <Link href={'/experience'}>Experience</Link>
-      </li>
-      <li>
-        <Link href={'/projects'}>Projects</Link>
-      </li>
-      <li>
-        <Link href={'/contact'}>Contact</Link>
-      </li>
+      {links.map((link) =>
+        <li className='menuLink' key={link.title}><Link href={link.link}>{link.title}</Link></li>
+      )}
     </ol>
   );
 }

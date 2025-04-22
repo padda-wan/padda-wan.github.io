@@ -1,4 +1,5 @@
 'use client'
+
 import Link from 'next/link'
 import { usePathname } from "next/navigation";
 import { Bebas_Neue } from "next/font/google";
@@ -11,7 +12,6 @@ const bebasNeu = Bebas_Neue({
   subsets: ["latin"],
 });
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${bebasNeu.variable} min-h-screen flex flex-col items-center justify-center overflow-hidden`}>
-        <div className="h-200 text-8xl m-20 p-20 pl-30 relative border-t-4 border-r-4">
+        <div className="h-200 w-300 text-8xl m-20 p-20 pl-28 relative border-t-4 border-r-4">
           <div className="flex absolute -bottom-26 left-4">
             <Image
               className="flex mr-5"
@@ -45,6 +45,7 @@ export default function RootLayout({
           <div className="bg-black/20 w-20 absolute bottom-0 left-0 border-r-4 h-full ledger"></div>
           <div className="absolute w-2000 bottom-0 -left-200 border-b-4"></div>
           <div className="absolute h-2000 -bottom-200 left-0 border-l-4"></div>
+          <div className="absolute top-0 border-10 right-0"></div>
         </div>
       </body>
     </html>
