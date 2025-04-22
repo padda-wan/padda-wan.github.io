@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSerif.variable}  min-h-screen flex flex-col items-center justify-center`}>
+      <body className={`${dmSerif.variable}  min-h-screen flex flex-col items-center justify-center overflow-hidden`}>
         {children}
       </body>
     </html>

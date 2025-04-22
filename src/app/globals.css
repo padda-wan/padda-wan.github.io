@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* .menu-item { */
+/*   @apply  */
+/* } */
 
 body {
   background: #ECE9E6;
@@ -10,3 +13,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@keyframes smoothLines {
+  from { background-position: 0 0; }
+  to   { background-position: 20px 11.5px; }
+}
+
+.ledger {
+  background-image: linear-gradient(
+  45deg, 
+  #000000 8.3%, 
+  transparent 8.3%, 
+  transparent 50%, 
+  #000000 50%, 
+  #000000 58.33%, 
+  transparent 58.33%, 
+  transparent 100%
+  );
+  background-size: 8.49px 8.49px;
+  animation: smoothLines 1s linear infinite reverse;
+}
