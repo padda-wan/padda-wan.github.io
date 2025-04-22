@@ -1,6 +1,10 @@
+'use client'
+import Link from 'next/link'
 import type { Metadata } from "next";
-import { DM_Serif_Display } from "next/font/google";
-import "./globals.css";
+import { usePathname } from "next/navigation";
+import { DM_Serif_Display, Bebas_Neue } from "next/font/google";
+import Image from "next/image";
+import './globals.css'
 
 const dmSerif = DM_Serif_Display({
   variable: "--font-dm-serif",
@@ -8,20 +12,47 @@ const dmSerif = DM_Serif_Display({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Jason Klaaste",
-  description: "Github homepage and resume",
-};
+const bebasNeu = Bebas_Neue({
+  variable: "--bebas-neu",
+  weight: "400",
+  subsets: ["latin"],
+});
+
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const path = usePathname();
   return (
     <html lang="en">
-      <body className={`${dmSerif.variable}  min-h-screen flex flex-col items-center justify-center overflow-hidden`}>
-        {children}
+      <body className={`${bebasNeu.variable} min-h-screen flex flex-col items-center justify-center overflow-hidden`}>
+        <div className="h-200 text-8xl m-20 p-20 pl-30 relative border-t-4 border-r-4">
+          <div className="flex absolute -bottom-26 left-4">
+            <Image
+              className="flex mr-5"
+              priority
+              width={70}
+              height={70}
+              src="jk-logo.svg"
+              alt="Jason Klaaste"
+            />
+            {
+              path !== '/' ? (
+                <Link href={'/'}>Back</Link>
+              ) : (
+                ''
+              )
+            }
+          </div>
+          <div>
+            {children}
+          </div>
+          <div className="bg-black/20 w-20 absolute bottom-0 left-0 border-r-4 h-full ledger"></div>
+          <div className="absolute w-2000 bottom-0 -left-200 border-b-4"></div>
+          <div className="absolute h-2000 -bottom-200 left-0 border-l-4"></div>
+        </div>
       </body>
     </html>
   );

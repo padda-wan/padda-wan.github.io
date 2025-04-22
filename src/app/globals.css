@@ -1,16 +1,23 @@
 @import "tailwindcss";
 
-/* .menu-item { */
-/*   @apply  */
-/* } */
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: green;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
 
 body {
   background: #ECE9E6;
   background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
   background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
-  font-family: "DM Serif Display", Helvetica, sans-serif;
+  font-family: "Bebas Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 2em;
 }
 
 @keyframes smoothLines {
