@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { Bebas_Neue } from "next/font/google";
 import Image from "next/image";
 import './globals.css'
-import { AnimatePresence } from "motion/react"
 import { motion } from 'motion/react';
 
 const bebasNeu = Bebas_Neue({

@@ -28,7 +28,7 @@ export default function Home() {
         <li className='menuLink' key={link.title}>
           <Link
             href={link.link}
-            onNavigate={(e) => {
+            onNavigate={() => {
               // alert('navigating')
             }}
           >
