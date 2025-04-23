@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 
 const links = [
@@ -23,7 +25,16 @@ export default function Home() {
   return (
     <ol>
       {links.map((link) =>
-        <li className='menuLink' key={link.title}><Link href={link.link}>{link.title}</Link></li>
+        <li className='menuLink' key={link.title}>
+          <Link
+            href={link.link}
+            onNavigate={(e) => {
+              // alert('navigating')
+            }}
+          >
+            {link.title}
+          </Link>
+        </li>
       )}
     </ol>
   );
