@@ -7,7 +7,6 @@ import Image from "next/image";
 import './globals.css'
 import { motion } from 'motion/react';
 import Template from './template';
-import { AnimatePresence } from 'motion/react';
 
 const bebasNeu = Bebas_Neue({
   variable: "--bebas-neu",
