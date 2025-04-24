@@ -1,0 +1,38 @@
+import Layout from "@/components/Layout";
+import Link from 'next/link'
+
+const links = [
+  {
+    link: "/about",
+    title: "About"
+  },
+  {
+    link: "/experience",
+    title: "Experience"
+  },
+  {
+    link: "/projects",
+    title: "Projects"
+  },
+  {
+    link: "/contact",
+    title: "Contact"
+  },
+]
+
+export default function Home() {
+  return (
+    <Layout>
+      <ol>
+        {links.map((link) =>
+          <li className='menuLink' key={link.title}>
+            <Link
+              href={link.link}>
+              {link.title}
+            </Link>
+          </li>
+        )}
+      </ol>
+    </Layout>
+  );
+}
