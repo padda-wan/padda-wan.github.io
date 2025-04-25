@@ -11,12 +11,6 @@ const bebasNeu = Bebas_Neue({
   subsets: ["latin"],
 });
 
-const transition = {
-  duration: 0.8,
-  delay: 0.5,
-  ease: [0, 0.71, 0.2, 1.01],
-}
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,46 +19,33 @@ export default function RootLayout({
   const path = usePathname();
   return (
     <html lang="en">
-      <body className={`${bebasNeu.variable} min-h-screen flex flex-col items-center justify-center overflow-hidden animating`}>
-        <div className="h-200 w-300 text-8xl m-20 p-20 pl-28 relative border-t-4 border-r-4">
-          <div className="flex absolute -bottom-26 left-4">
-            {/* <motion.div transition={transition}> */}
-            {/*   <Image */}
-            {/*     className="flex" */}
-            {/*     priority */}
-            {/*     width={70} */}
-            {/*     height={70} */}
-            {/*     src="jk-logo.svg" */}
-            {/*     alt="Jason Klaaste" */}
-            {/*   /> */}
-            {/* </motion.div> */}
-            {
-              path !== '/' ? (
-                <Link href={'/'}>Back</Link>
-              ) : (
-                ''
-              )
-            }
-          </div>
-          <main className='absolute'>
-            <motion.div
-              initial={{ x: 300, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: 300, opacity: 0 }}
-              transition={{
-                type: "spring",
-                stiffness: 260,
-                damping: 20,
-                duration: 0.2,
-              }}
-            >
-              {children}
-            </motion.div>
-          </main>
-          <div className="bg-black/20 w-20 absolute bottom-0 left-0 border-r-4 h-full ledger"></div>
-          <div className="absolute w-2000 bottom-0 -left-200 border-b-4"></div>
-          <div className="absolute h-2000 -bottom-200 left-0 border-l-4"></div>
-          <div className="absolute top-0 border-10 right-0 border-red-500"></div>
+      <body className={`${bebasNeu.variable}`}>
+        <div className='grid grid-cols-5 grid-rows-5 auto-rows-auto auto-cols-auto h-screen'>
+          {/* borders */}
+          <div className='col-start-2 col-span-3 row-start-2 row-span-3 border-l-4 border-b-4 self-end h-full'></div>
+          <motion.div
+            className='col-start-2 col-span-3 row-start-2 row-span-3 border-4 self-end h-full flex justify-end'
+            initial={{ height: 'auto', width: '2.6%' }}
+            animate={{ height: '100%', width: '100%' }}
+            transition={{
+              duration: 0.5,
+              delay: 0.2,
+              ease: [0, 0.71, 0.3, 1],
+            }}
+          >
+            <div className='border-10 border-red-500 h-0 w-0'></div>
+          </motion.div>
+          <motion.main className='col-start-2 col-span-3 row-start-2 row-span-3 border-4 border-transparent self-end h-full'>
+            {/* main container */}
+            <p>test</p>
+          </motion.main>
+          {/* borders */}
+          <div className='col-start-2 col-span-1 row-start-5 row-span-1 border-l-4'></div>
+          <div className='col-start-2 col-span-1 row-start-1 row-span-1 border-l-4'></div>
+          <div className='col-start-1 col-span-1 row-start-4 row-span-1 border-b-4'></div>
+          <div className='col-start-5 col-span-1 row-start-4 row-span-1 border-b-4'></div>
+          <div></div>
+          <div></div>
         </div>
       </body>
     </html>

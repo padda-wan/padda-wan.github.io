@@ -5,7 +5,7 @@ import { AnimatePresence } from "motion/react"
 
 export default function App({ Component, pageProps, router }: AppProps) {
   return (
-    <AnimatePresence mode="wait" initial={false}>
+    <AnimatePresence mode="wait" initial={true}>
       <Component {...pageProps} key={router.asPath} />
     </AnimatePresence>
   )
