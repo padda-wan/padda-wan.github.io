@@ -34,10 +34,7 @@ export default function RootLayout({
             }}
           >
             <div className='border-10 border-red-500 h-0 w-0'></div>
-          </motion.div>
-          <motion.main className='relative col-start-2 col-span-3 row-start-2 row-span-3 border-4 border-transparent self-end h-full overflow-y-scroll'>
-            {/* main container */}
-            <p className='overflow-auto'>
+            <p className=''>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec consequat mauris. Praesent id magna ut libero feugiat lacinia. Nulla tempor, felis a tempus laoreet, mi sapien interdum purus, a egestas velit tellus tristique elit. Vivamus interdum dapibus porttitor. Sed non magna ipsum. Fusce ornare bibendum vulputate. Donec et nisl iaculis, pulvinar nisl sed, dapibus risus. Ut malesuada pellentesque mi, a fermentum nisl eleifend non. Phasellus at tempor tortor.
 
               Suspendisse laoreet lorem sed nisi accumsan, et convallis sem hendrerit. Morbi laoreet libero sit amet aliquam scelerisque. Nam nec metus et nisl faucibus viverra. Aenean quis nunc velit. Morbi porttitor nisl enim, quis mollis ligula semper ac. Morbi pharetra massa id neque molestie, ac dictum purus imperdiet. Nam malesuada, felis sit amet mattis lacinia, ligula nulla accumsan libero, a laoreet orci lacus quis lacus. Duis volutpat arcu non ante fringilla bibendum.
@@ -48,6 +45,9 @@ export default function RootLayout({
 
               Donec bibendum non tortor venenatis suscipit. Ut suscipit id ligula eget tempor. Cras in metus nec velit ullamcorper suscipit id ut est. Pellentesque vulputate, velit eu semper eleifend, arcu tellus ornare ex, vel tempus orci turpis eget nisl. In sit amet tristique justo. Maecenas eget augue ultrices, vehicula leo at, lacinia nunc. Sed at enim sodales, fermentum libero quis, semper lorem. Maecenas sit amet magna metus. Sed et libero laoreet, egestas mi at, luctus ex. Mauris luctus nunc metus, nec iaculis sapien commodo ac. Aliquam ut posuere tellus. Vivamus maximus semper massa ac pretium. Proin finibus pellentesque congue. Cras ac metus vel mi feugiat aliquet. Nunc efficitur leo sed urna fermentum, a pulvinar erat lobortis. Nullam tellus augue, venenatis id suscipit eu, porttitor id lacus.
             </p>
+          </motion.div>
+          <motion.main className='relative col-start-2 col-span-3 row-start-2 row-span-3 border-4 border-transparent self-end h-full overflow-y-scroll'>
+            {/* main container */}
           </motion.main>
           {/* borders */}
           <div className='col-start-2 col-span-1 row-start-5 row-span-1 border-l-4'></div>
