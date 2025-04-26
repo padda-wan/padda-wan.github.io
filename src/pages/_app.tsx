@@ -1,12 +1,18 @@
 'use client'
 
 import type { AppProps } from "next/app";
-import { AnimatePresence } from "motion/react"
+import { useState } from "react";
+import { MenuContext } from "@/providers/menu";
 
-export default function App({ Component, pageProps, router }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
+
+  const [navigating, setNavigating] = useState(false)
   return (
-    <AnimatePresence mode="wait" initial={true}>
-      <Component {...pageProps} key={router.asPath} />
-    </AnimatePresence>
+    <MenuContext.Provider value={{
+      "navigating": navigating,
+      "setNavigating": setNavigating
+    }}>
+      <Component {...pageProps} />
+    </MenuContext.Provider >
   )
 }
