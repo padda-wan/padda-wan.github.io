@@ -38,7 +38,7 @@ export default function RootLayout({
             style={{ gridRowStart: transition ? '5' : '1' }}
           ></motion.div>
           <motion.div
-            className='bg-white col-start-1 col-end-6 row-start-1 row-end-6 border-t-4'
+            className='bg-white col-start-1 col-end-6 row-start-1 row-end-6'
             layout
             style={{ gridRowStart: transition ? '5' : '1' }}
           ></motion.div>
@@ -48,11 +48,11 @@ export default function RootLayout({
             style={{ gridColumnEnd: transition ? '1' : '6' }}
           ></motion.div>
           <motion.div
-            className='bg-white col-start-1 col-end-6 row-start-1 row-end-6 border-r-4'
+            className='bg-white col-start-1 col-end-6 row-start-1 row-end-6'
             layout
             style={{ gridColumnEnd: transition ? '1' : '6' }}
           ></motion.div>
-          <main className='col-start-2 col-end-5 row-start-2 row-end-5 border-t-4 border-r-4 p-4'>
+          <main className='col-start-2 col-end-5 row-start-2 row-end-5 border-t-4 border-r-4 p-20 overflow-y-scroll'>
             ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum ante nulla, nec facilisis diam ultricies id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse finibus lectus vitae quam placerat sodales. Nam eget tellus non odio faucibus tempus. Sed venenatis tellus porta dignissim iaculis. Vivamus sit amet magna erat. Donec sagittis in diam et efficitur. In elementum, erat ac viverra elementum, risus lectus viverra nulla, et molestie eros ipsum in mauris. Morbi elementum at odio a fermentum. In non erat dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer convallis congue molestie. Sed ut mauris in ex interdum cursus. Ut sodales ac tellus quis tincidunt. Ut eget ante at velit vulputate pulvinar vitae nec urna.
           </main>
         </div>
