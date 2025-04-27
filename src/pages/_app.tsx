@@ -7,6 +7,7 @@ import { MenuContext } from "@/providers/menu";
 export default function App({ Component, pageProps }: AppProps) {
 
   const [navigating, setNavigating] = useState(false)
+
   return (
     <MenuContext.Provider value={{
       "navigating": navigating,

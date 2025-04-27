@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from 'motion/react'
 import { MenuContext } from '@/providers/menu';
 import NavLink from '@/components/Navlink';
-import { useContext } from 'react';
+import { useEffect, useContext } from 'react';
 
 const durationSeconds = 0.4
 const crosshairTransition = {
@@ -17,8 +17,12 @@ export default function Menu({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const { navigating } = useContext(MenuContext)
+  const { navigating, setNavigating } = useContext(MenuContext)
   const path = usePathname();
+
+  useEffect(() => {
+    setNavigating(true)
+  }, [])
 
   return (
     <div className='grid grid-cols-5 grid-rows-5 auto-rows-auto auto-cols-auto h-screen'>
