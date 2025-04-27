@@ -21,8 +21,8 @@ export default function Menu({
   const path = usePathname();
 
   useEffect(() => {
-    // eslint-disable-next-line
     setNavigating(true)
+    // eslint-disable-next-line
   }, [])
 
   return (
