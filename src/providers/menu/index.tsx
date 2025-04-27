@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 export const MenuContext = createContext({
   "navigating": false,
-  "setNavigating": () => { },
+  "setNavigating": (isNavigating: boolean) => { },
 });
 
 export function MenuProvider({
