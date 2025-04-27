@@ -27,7 +27,7 @@ export default function Menu({
   return (
     <div className='grid grid-cols-5 grid-rows-5 auto-rows-auto auto-cols-auto h-screen'>
       <motion.div
-        className='z-2 col-start-1 col-end-6 row-start-1 row-end-6 border-t-4'
+        className='z-10 col-start-1 col-end-6 row-start-1 row-end-6 border-t-4 pointer-events-none'
         layout
         transition={crosshairTransition}
         style={{ gridRowStart: navigating ? '5' : '1' }}
@@ -39,13 +39,13 @@ export default function Menu({
         style={{ gridRowStart: navigating ? '5' : '1', }}
       />
       <motion.div
-        className='z-2 col-start-1 col-end-6 row-start-1 row-end-6 border-r-4'
+        className='z-10 col-start-1 col-end-6 row-start-1 row-end-6 border-r-4'
         layout
         transition={crosshairTransition}
         style={{ gridColumnEnd: navigating ? '1' : '6' }}
       />
       <motion.div
-        className='bg-white col-start-1 col-end-6 row-start-1 row-end-6'
+        className='z-3 bg-white col-start-1 col-end-6 row-start-1 row-end-6'
         layout
         transition={crosshairTransition}
         style={{ gridColumnEnd: navigating ? '1' : '6' }}
