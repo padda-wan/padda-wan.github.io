@@ -1,6 +1,11 @@
-import { createContext } from "react";
+import React, { createContext } from "react";
 
-export const MenuContext = createContext({
+interface IMenuContext {
+  navigating: boolean;
+  setNavigating: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export const MenuContext = createContext<IMenuContext>({
   "navigating": false,
   "setNavigating": () => { },
 });

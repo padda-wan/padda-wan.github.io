@@ -22,8 +22,7 @@ export default function Menu({
 
   useEffect(() => {
     setNavigating(true)
-    // eslint-disable-next-line
-  }, [])
+  }, [setNavigating])
 
   return (
     <div className='grid grid-cols-5 grid-rows-5 auto-rows-auto auto-cols-auto h-screen'>

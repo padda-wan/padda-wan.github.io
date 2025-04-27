@@ -14,7 +14,7 @@ export default function NavLink({ link, title }: NavLink) {
   const durationSeconds = 0.4
   const router = useRouter();
 
-  const navigate = (link: string, event: React.MouseEvent) => {
+  const navigate = (link: string, event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault()
     setNavigating(false)
     setTimeout(() => {
