@@ -12,7 +12,8 @@ export default function RootLayout({
   props,
   children,
 }: Readonly<{
-  props: any;
+  // eslint-disable-next-line
+  props: React.ComponentProps<any>;
   children: React.ReactNode;
 }>) {
 
