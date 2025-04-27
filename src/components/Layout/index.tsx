@@ -9,20 +9,18 @@ const bebasNeu = Bebas_Neue({
 });
 
 export default function RootLayout({
+  props,
   children,
 }: Readonly<{
+  props: React.ComponentProps;
   children: React.ReactNode;
 }>) {
 
   return (
-    <html lang="en">
-      <body className={`${bebasNeu.variable}`}>
-        <main>
-          <Menu>
-            {children}
-          </Menu>
-        </main>
-      </body>
-    </html >
+    <div className={`${bebasNeu.variable} text-8xl`} {...props}>
+      <Menu>
+        {children}
+      </Menu>
+    </div>
   );
 }

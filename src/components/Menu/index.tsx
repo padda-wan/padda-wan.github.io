@@ -50,11 +50,11 @@ export default function Menu({
         transition={crosshairTransition}
         style={{ gridColumnEnd: navigating ? '1' : '6' }}
       />
-      <main className='col-start-2 col-end-5 row-start-2 row-end-5 border-t-4 border-r-4 p-20 pl-30  overflow-y-auto relative'>
+      <main className='col-start-2 col-end-5 row-start-2 row-end-5 border-t-4 border-r-4 p-20 pl-30 overflow-y-auto relative'>
         <div className="bg-black/20 w-20 h-full absolute bottom-0 left-0 border-r-4 ledger"></div>
         {children}
       </main>
-      <div className='col-start-2 col-end-3 row-start-5 row-end-5 -x-20 z-2'>
+      <div className='col-start-2 col-end-3 row-start-5 row-end-5 -x-20 z-2 p-5'>
         {path !== '/' && <NavLink title='Back' link='/' />}
       </div>
     </div>
