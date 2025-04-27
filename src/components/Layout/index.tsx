@@ -12,7 +12,7 @@ export default function RootLayout({
   props,
   children,
 }: Readonly<{
-  props: React.ComponentProps;
+  props: any;
   children: React.ReactNode;
 }>) {
 
