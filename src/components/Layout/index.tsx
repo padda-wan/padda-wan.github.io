@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${bebasNeu.variable}`}>
-        <main className='col-start-2 col-end-5 row-start-2 row-end-5 border-t-4 border-r-4 overflow-y-auto'>
+        <main>
           <Menu>
             {children}
           </Menu>
