@@ -1,9 +1,9 @@
-import Link from 'next/link'
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { motion } from 'motion/react'
 import { MenuContext } from '@/providers/menu';
-import { useEffect, useState, useContext } from 'react';
+import NavLink from '@/components/Navlink';
+import { useContext } from 'react';
 
 const durationSeconds = 0.4
 const crosshairTransition = {
@@ -17,21 +17,8 @@ export default function Menu({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const { navigating, setNavigating } = useContext(MenuContext)
+  const { navigating } = useContext(MenuContext)
   const path = usePathname();
-  const router = useRouter();
-
-  useEffect(() => {
-    setNavigating(true)
-  }, [])
-
-  const navigate = (event: any) => {
-    event.preventDefault()
-    setNavigating(false)
-    setTimeout(() => {
-      router.push('/');
-    }, durationSeconds * 1000);
-  }
 
   return (
     <div className='grid grid-cols-5 grid-rows-5 auto-rows-auto auto-cols-auto h-screen'>
@@ -63,7 +50,7 @@ export default function Menu({
         {children}
       </main>
       <div className='col-start-2 col-end-3 row-start-5 row-end-5 -x-20 z-2'>
-        {path !== '/' && <Link href={'/'} onNavigate={navigate}>Back</Link>}
+        {path !== '/' && <NavLink title='Back' link='/' />}
       </div>
     </div>
   );
