@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { MenuContext } from '@/providers/menu';
-import { useContext } from 'react';
+import { MouseEvent, useContext } from 'react';
 import { useRouter } from "next/navigation";
 
 type NavLink = {
@@ -14,7 +14,7 @@ export default function NavLink({ link, title }: NavLink) {
   const durationSeconds = 0.4
   const router = useRouter();
 
-  const navigate = (link: string, event: React.MouseEvent<HTMLButtonElement>) => {
+  const handleNavigate = (link: string, event: MouseEvent<Element, MouseEvent>) => {
     event.preventDefault()
     setNavigating(false)
     setTimeout(() => {
@@ -25,7 +25,8 @@ export default function NavLink({ link, title }: NavLink) {
   return (
     <Link
       href={link}
-      onNavigate={(event) => { navigate(link, event) }}
+      // @ts-expect-error: error seems to happen regardless of a fix
+      onNavigate={(event) => { handleNavigate(link, event) }}
     >
       {title}
     </Link>

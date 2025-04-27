@@ -1,6 +1,5 @@
 import { Bebas_Neue } from "next/font/google";
 import Menu from "@/components/Menu"
-import "@/styles/globals.css";
 
 const bebasNeu = Bebas_Neue({
   variable: "--bebas-neu",
@@ -13,7 +12,7 @@ export default function RootLayout({
   children,
 }: Readonly<{
   // eslint-disable-next-line
-  props: React.ComponentProps<any>;
+  props?: React.ComponentProps<any>;
   children: React.ReactNode;
 }>) {
 
