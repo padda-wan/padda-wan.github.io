@@ -11,9 +11,9 @@
 }
 
 body {
-  background: #ECE9E6;
-  background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
-  background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+  /* background: #ECE9E6; */
+  /* background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6); */
+  /* background: linear-gradient(to bottom, #FFFFFF, #ECE9E6); */
   font-family: "Bebas Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
