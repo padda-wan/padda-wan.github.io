@@ -60,10 +60,14 @@ export default function Menu({
           alt="Jason Klaaste"
         />
       </div>
-      <main className='col-start-2 col-end-5 row-start-2 row-end-5 border-t-4 border-r-4 p-20 pl-30 overflow-y-auto relative'>
-        <div className="absolute top-0 border-10 right-0 border-red-500"></div>
-        <div className="bg-black/20 w-20 h-full absolute bottom-0 left-0 border-r-4 ledger"></div>
-        {children}
+      <main className='col-start-2 col-end-5 row-start-2 row-end-5 border-t-4 border-r-4 relative'>
+        <div className="flex flex-row items-stretch h-full">
+          {/* <div className="top-0 absolute border-10 right-0 border-red-500"></div> */}
+          <div className="flex-none bg-black/20 w-20 border-r-4 ledger"></div>
+          <div className="flex-auto overflow-y-auto p-10">
+            {children}
+          </div>
+        </div>
       </main>
       <div className='col-start-2 col-end-3 row-start-5 row-end-5 -x-20 z-2 p-5'>
         {path !== '/' && <NavLink title='Back' link='/' />}

@@ -17,7 +17,7 @@ body {
   font-family: "Bebas Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: 2em;
+  /* letter-spacing: 2em; */
 }
 
 li:hover {
