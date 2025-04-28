@@ -2,9 +2,6 @@ import Layout from '@/components/Layout'
 import { experience } from '../../experience.json'
 
 export default function About() {
-  experience.map((e) => {
-    console.log(e.company)
-  })
   return (
     <Layout>
       <h1>experience</h1>

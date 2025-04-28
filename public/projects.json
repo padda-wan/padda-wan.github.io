@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Hornet Keyboard",
+    "description": "My custom built split keyboard using bluetooth configured with the ZMK firmware",
+    "link": "https://github.com/padda-wan/hornet"
+  },
+  {
+    "name": "Dodge the frameworks",
+    "description": "My first attempt at a 2d game developed in Godot",
+    "link": "https://github.com/padda-wan/dodge-the-creeps"
+  },
+  {
+    "name": "Ghost Krush",
+    "description": "My first attempt at a 3d game developed in Godot",
+    "link": "https://github.com/padda-wan/dodge-the-creeps"
+  }
+]
