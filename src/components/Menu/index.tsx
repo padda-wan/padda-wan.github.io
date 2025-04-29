@@ -50,7 +50,11 @@ export default function Menu({
         transition={crosshairTransition}
         style={{ gridColumnEnd: navigating ? '1' : '6' }}
       />
-      <div className="col-start-1 col-end-2 row-start-5 row-end-5 z-3 p-7 flex align-right justify-end items-start">
+      <motion.div className="col-start-1 col-end-2 row-start-5 row-end-5 z-3 p-7 flex align-right justify-end items-start"
+        layout
+        transition={crosshairTransition}
+        style={{ gridColumnEnd: navigating ? '1' : '6' }}
+      >
         <Image
           className="flex justify-end"
           priority
@@ -59,7 +63,7 @@ export default function Menu({
           src="jk-logo.svg"
           alt="Jason Klaaste"
         />
-      </div>
+      </motion.div>
       <main className='col-start-2 col-end-5 row-start-2 row-end-5 border-t-4 border-r-4 relative'>
         <div className="flex flex-row items-stretch h-full">
           {/* <div className="top-0 absolute border-10 right-0 border-red-500"></div> */}
@@ -69,7 +73,7 @@ export default function Menu({
           </div>
         </div>
       </main>
-      <div className='col-start-2 col-end-3 row-start-5 row-end-5 -x-20 z-2 p-5'>
+      <div className='tracking-widest col-start-2 col-end-3 row-start-5 row-end-5 -x-20 z-2 p-5'>
         {path !== '/' && <NavLink title='Back' link='/' />}
       </div>
     </div>

@@ -23,13 +23,15 @@ const links = [
 export default function Home() {
   return (
     <Layout>
-      <ol>
-        {links.map((link) =>
-          <li className='menuLink' key={link.title}>
-            <NavLink title={link.title} link={link.link} />
-          </li>
-        )}
-      </ol>
+      <div className="tracking-widest">
+        <ol>
+          {links.map((link) =>
+            <li className='menuLink' key={link.title}>
+              <NavLink title={link.title} link={link.link} />
+            </li>
+          )}
+        </ol>
+      </div>
     </Layout>
   );
 }
