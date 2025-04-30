@@ -11,7 +11,6 @@ const crosshairTransition = {
   ease: [0, 0.71, 0.2, 1.01]
 }
 
-
 export default function Menu({
   children,
 }: Readonly<{

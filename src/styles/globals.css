@@ -20,16 +20,6 @@ body {
   /* letter-spacing: 2em; */
 }
 
-li:hover {
-  list-style: square!important;
-}
-
-li:hover::marker {
-  color: red;
-  font-size: 1em;
-  margin-right: 10px;
-}
-
 @keyframes smoothLines {
   from { background-position: 0 0; }
   to   { background-position: 20px 11.5px; }

@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout"
 import Projects from "../../public/projects.json"
+import Link from 'next/link'
 
 export default function About() {
   return (
@@ -10,14 +11,14 @@ export default function About() {
           Projects.map(p => {
             return (
               <ul key={p.name}>
-                <li><h1>{p.name}</h1></li>
+                <li><h1 className="font-extrabold">{p.name}</h1></li>
                 <li>{p.description}</li>
-                <li>{p.link}</li>
+                <li><Link href={p.link} className="text-red-500 underline" >{p.link}</Link></li>
               </ul>
             )
           })
         }
       </div>
-    </Layout>
+    </Layout >
   );
 }
