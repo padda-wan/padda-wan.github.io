@@ -63,11 +63,11 @@ export default function Menu({
           alt="Jason Klaaste"
         />
       </motion.div>
-      <main className='col-start-2 col-end-5 row-start-2 row-end-5 border-t-4 border-r-4 relative'>
+      <main className='col-start-2 col-end-5 row-start-2 row-end-5 border-t-4 border-r-4 relative content-container'>
         <div className="flex flex-row items-stretch h-full">
-          {/* <div className="top-0 absolute border-10 right-0 border-red-500"></div> */}
+          <div className="top-0 absolute border-10 right-0 border-red-500"></div>
           <div className="flex-none bg-black/20 w-20 border-r-4 ledger"></div>
-          <div className="flex-auto overflow-y-auto p-10">
+          <div className=" flex-auto overflow-y-auto p-10">
             {children}
           </div>
         </div>

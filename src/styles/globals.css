@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
   color: black;
   background: green;
 }
@@ -11,13 +11,16 @@
 }
 
 body {
-  /* background: #ECE9E6; */
-  /* background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6); */
-  /* background: linear-gradient(to bottom, #FFFFFF, #ECE9E6); */
+  /* background: floralwhite; */
+  /* background: -webkit-linear-gradient(to bottom, #FFFFFF, floralwhite); */
+  /* background: linear-gradient(to bottom, #FFFFFF, floralwhite); */
   font-family: "Bebas Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* letter-spacing: 2em; */
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @keyframes smoothLines {
@@ -37,5 +40,5 @@ body {
   transparent 100%
   );
   background-size: 8.49px 8.49px;
-  animation: smoothLines 1s linear infinite reverse;
+  animation: smoothLines 0.5s linear infinite reverse;
 }

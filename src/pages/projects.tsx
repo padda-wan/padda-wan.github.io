@@ -2,19 +2,21 @@ import Layout from "@/components/Layout"
 import Projects from "../../public/projects.json"
 import Link from 'next/link'
 
-export default function About() {
+export default function ProjectsPage() {
   return (
     <Layout>
       <h1>Projects</h1>
-      <div className="text-xl">
+      <div className="space-y-6">
         {
           Projects.map(p => {
             return (
-              <ul key={p.name}>
-                <li><h1 className="font-extrabold">{p.name}</h1></li>
-                <li>{p.description}</li>
-                <li><Link href={p.link} className="text-red-500 underline" >{p.link}</Link></li>
-              </ul>
+              <div key={p.name} className='mb-6 pl-5 border-l-2 border-gray-400'>
+                <h2 className="text-2xl font-bold">{p.name}</h2>
+                <p className='text-sm mb-3'>{p.description}</p>
+                <Link href={p.link} target="_blank" className="text-red-500 underline hover:text-red-700 text-sm">
+                  {p.link} →
+                </Link>
+              </div>
             )
           })
         }
