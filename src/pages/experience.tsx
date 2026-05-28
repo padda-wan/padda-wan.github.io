@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Experience() {
   return (
     <Layout>
-      <h1>experience</h1>
+      <h1 className="text-zinc-400">experience</h1>
       {
         experience.map((exp) => {
           const startDate = new Date(exp.start_date * 1000).toLocaleDateString('en-US', { year: 'numeric', month: 'short' })
@@ -15,7 +15,7 @@ export default function Experience() {
             <div key={exp.company} className='mb-8 pl-5 border-l-2 border-gray-400'>
               <h2 className='text-2xl font-bold'>{exp.company}</h2>
               <p className='text-sm text-gray-600'>{startDate} – {endDate}</p>
-              <p className='text-lg font-bold text-red-500'>{exp.role}</p>
+              <p className='text-lg font-bold text-orange-500'>{exp.role}</p>
               <p className='text-sm italic mb-4'>{exp.outline}</p>
 
               {exp.achievements && (
@@ -31,7 +31,7 @@ export default function Experience() {
                         <span className='font-semibold'>{project.name}</span>
                         {'length' in project && project.length && <span className='text-gray-600'> ({project.length})</span>}
                         {project.url && (
-                          <div className='text-red-500'>
+                          <div className='text-orange-500'>
                             <Link href={project.url} target="_blank" className='underline text-xs'>
                               View →
                             </Link>

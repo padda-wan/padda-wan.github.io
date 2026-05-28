@@ -24,27 +24,27 @@ export default function Menu({
   }, [setNavigating])
 
   return (
-    <div className='grid grid-cols-5 grid-rows-5 auto-rows-auto auto-cols-auto h-screen'>
+    <div className='grid grid-cols-5 grid-rows-5 auto-rows-auto auto-cols-auto h-screen bg-zinc-900'>
       <motion.div
-        className='z-10 col-start-1 col-end-6 row-start-1 row-end-6 border-t-4 pointer-events-none'
+        className='z-10 col-start-1 col-end-6 row-start-1 row-end-6 border-t-4 border-zinc-400 pointer-events-none'
         layout
         transition={crosshairTransition}
         style={{ gridRowStart: navigating ? '5' : '1' }}
       />
       <motion.div
-        className='z-1 bg-white col-start-1 col-end-6 row-start-1 row-end-6'
+        className='z-1 bg-zinc-900 col-start-1 col-end-6 row-start-1 row-end-6'
         layout
         transition={crosshairTransition}
         style={{ gridRowStart: navigating ? '5' : '1', }}
       />
       <motion.div
-        className='z-10 col-start-1 col-end-6 row-start-1 row-end-6 border-r-4'
+        className='z-10 col-start-1 col-end-6 row-start-1 row-end-6 border-r-4 border-zinc-400'
         layout
         transition={crosshairTransition}
         style={{ gridColumnEnd: navigating ? '1' : '6' }}
       />
       <motion.div
-        className='z-3 bg-white col-start-1 col-end-6 row-start-1 row-end-6'
+        className='z-3 bg-zinc-900 col-start-1 col-end-6 row-start-1 row-end-6'
         layout
         transition={crosshairTransition}
         style={{ gridColumnEnd: navigating ? '1' : '6' }}
@@ -63,10 +63,10 @@ export default function Menu({
           alt="Jason Klaaste"
         />
       </motion.div>
-      <main className='col-start-2 col-end-5 row-start-2 row-end-5 border-t-4 border-r-4 relative content-container'>
+      <main className='col-start-2 col-end-5 row-start-2 row-end-5 border-t-4 border-r-4 border-zinc-400 relative content-container bg-zinc-900'>
         <div className="flex flex-row items-stretch h-full">
           <motion.div
-            className="top-0 absolute border-10 right-0 border-red-500"
+            className="top-0 absolute border-10 right-0 border-orange-500"
             initial={{ opacity: 1 }}
             animate={{
               opacity: [1, 1, 0, 0, 1]
@@ -78,13 +78,13 @@ export default function Menu({
               times: [0, 0.4, 0.5, 0.9, 1]
             }}
           ></motion.div>
-          <div className="flex-none bg-black/20 w-20 border-r-4 ledger"></div>
-          <div className=" flex-auto overflow-y-auto p-10">
+          <div className="flex-none bg-zinc-800 w-20 border-r-4 border-zinc-400 ledger"></div>
+          <div className="flex-auto overflow-y-auto p-10 text-zinc-400">
             {children}
           </div>
         </div>
       </main>
-      <div className='tracking-widest col-start-2 col-end-3 row-start-5 row-end-5 -x-20 z-2 p-5'>
+      <div className='tracking-widest col-start-2 col-end-3 row-start-5 row-end-5 -x-20 z-2 p-5 text-zinc-400'>
         {path !== '/' && <NavLink title='Back' link='/' />}
       </div>
     </div>

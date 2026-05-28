@@ -23,7 +23,7 @@ const links = [
 export default function Home() {
   return (
     <Layout>
-      <div className="tracking-widest">
+      <div className="tracking-widest text-zinc-400">
         <ol>
           {links.map((link) =>
             <li className='menuLink' key={link.title}>

@@ -4,7 +4,7 @@ export default function About() {
   return (
     <Layout>
       <h1 className="pb-10">About</h1>
-      <p className="text-xl tracking-wide">
+      <p className="text-xl tracking-wide text-zinc-400">
         <span className="font-semibold">
           I’ve been building systems and leading teams at scale for over a decade. I work as a Senior Full Stack Engineer and Solution Architect, focused on infrastructure work across large enterprises.
         </span>
