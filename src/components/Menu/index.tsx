@@ -4,7 +4,6 @@ import { motion } from 'motion/react'
 import { MenuContext } from '@/providers/menu';
 import NavLink from '@/components/Navlink';
 import { useEffect, useContext } from 'react';
-import { useTilt } from '@/hooks/useTilt';
 
 const durationSeconds = 0.4
 const crosshairTransition = {
@@ -19,14 +18,13 @@ export default function Menu({
 }>) {
   const { navigating, setNavigating } = useContext(MenuContext)
   const path = usePathname();
-  const { ref: tiltRef, style: tiltStyle } = useTilt();
 
   useEffect(() => {
     setNavigating(true)
   }, [setNavigating])
 
   return (
-    <div className='grid grid-cols-5 grid-rows-5 auto-rows-auto auto-cols-auto h-screen' ref={tiltRef} style={tiltStyle}>
+    <div className='grid grid-cols-5 grid-rows-5 auto-rows-auto auto-cols-auto h-screen'>
       <motion.div
         className='z-10 col-start-1 col-end-6 row-start-1 row-end-6 border-t-4 pointer-events-none'
         layout
@@ -67,7 +65,19 @@ export default function Menu({
       </motion.div>
       <main className='col-start-2 col-end-5 row-start-2 row-end-5 border-t-4 border-r-4 relative content-container'>
         <div className="flex flex-row items-stretch h-full">
-          <div className="top-0 absolute border-10 right-0 border-red-500"></div>
+          <motion.div
+            className="top-0 absolute border-10 right-0 border-red-500"
+            initial={{ opacity: 1 }}
+            animate={{
+              opacity: [1, 1, 0, 0, 1]
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              type: 'linear',
+              times: [0, 0.4, 0.5, 0.9, 1]
+            }}
+          ></motion.div>
           <div className="flex-none bg-black/20 w-20 border-r-4 ledger"></div>
           <div className=" flex-auto overflow-y-auto p-10">
             {children}
