@@ -4,6 +4,7 @@ import { motion } from 'motion/react'
 import { MenuContext } from '@/providers/menu';
 import NavLink from '@/components/Navlink';
 import { useEffect, useContext } from 'react';
+import { useTilt } from '@/hooks/useTilt';
 
 const durationSeconds = 0.4
 const crosshairTransition = {
@@ -18,13 +19,14 @@ export default function Menu({
 }>) {
   const { navigating, setNavigating } = useContext(MenuContext)
   const path = usePathname();
+  const { ref: tiltRef, style: tiltStyle } = useTilt();
 
   useEffect(() => {
     setNavigating(true)
   }, [setNavigating])
 
   return (
-    <div className='grid grid-cols-5 grid-rows-5 auto-rows-auto auto-cols-auto h-screen'>
+    <div className='grid grid-cols-5 grid-rows-5 auto-rows-auto auto-cols-auto h-screen' ref={tiltRef} style={tiltStyle}>
       <motion.div
         className='z-10 col-start-1 col-end-6 row-start-1 row-end-6 border-t-4 pointer-events-none'
         layout
